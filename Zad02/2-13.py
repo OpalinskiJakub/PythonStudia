@@ -1,10 +1,19 @@
-line="Zadanie trzynaste z python"
+    
+def length(line):
 
-splited_line=line.split()
 
-amount=0
+    splited_line=line.split()
 
-for word in splited_line:
-    amount+=len(word)
+    amount=0
 
-print(f"Laczna dlogosc wyrazow w napisie:{amount}")
+    for word in splited_line:
+        amount+=len(word)
+
+    print(f"Laczna dlogosc wyrazow w napisie:{amount}")
+    
+    return amount
+
+input="Zadanie trzynaste z python"
+output=23
+
+assert length(input)==output,f"Expected: {output}"

@@ -1,9 +1,14 @@
 
-line="raz   dwa trzy \n cztery\tpie"
+def amount(line):
+    splitted=line.split()
 
-splitted=line.split()
+    amount=len(splitted)
 
-amount=len(splitted)
+    print(f"Ilosc wyrazow:{amount}")
 
-print(f"Ilosc wyrazow:{amount}")
+    return amount
 
+input="raz   dwa trzy \n cztery\tpie"
+output=5
+
+assert amount(input)==output,f"Expected: {output}"
