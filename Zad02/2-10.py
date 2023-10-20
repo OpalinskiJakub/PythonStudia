@@ -1,5 +1,5 @@
 
-line="raz   dwa trzy \n cztery\tpiec"
+line="raz   dwa trzy \n cztery\tpie"
 
 splitted=line.split()
 
