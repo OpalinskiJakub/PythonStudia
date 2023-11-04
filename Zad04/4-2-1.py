@@ -37,4 +37,5 @@ def make_ruler(n):
         print("Zle dane,Spróbuj ponownie.")
         
         
+        
 print(make_ruler(12))
