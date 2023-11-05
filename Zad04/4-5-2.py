@@ -1,11 +1,8 @@
-def odwracanie(L, left, right):
-    if right >= len(L) or left >= right or left < 0 or right < 0:
+def odwracanie(L,left,right):
+    if left < 0 or right < 0 or right >= len(L) or left >= right:
         return  
 
-    if left < right:
-        L[left], L[right] = L[right], L[left]  
-        odwracanie(L, left + 1, right - 1) 
-        
+
 input1=[1,4,3,2,5]
 input2=[3,4,5,3,2]
 odwracanie(input1,1,3)
