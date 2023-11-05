@@ -1,6 +1,10 @@
 def odwracanie(L,left,right):
     if left < 0 or right < 0 or right >= len(L) or left >= right:
         return  
+    while left < right:
+        L[left],L[right]=L[right],L[left]
+        left=left+1
+        right=right-1
 
 
 input1=[1,4,3,2,5]
