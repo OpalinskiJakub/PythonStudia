@@ -48,7 +48,7 @@ class TestPoint(unittest.TestCase):
         self.point2 = Point(2, 3)
         self.point3 = Point(4, 5)
 
-    # Pozostałe testy bez zmian
+
 
     def test_addition(self):
         self.assertEqual(self.point1 + self.point3, Point(6, 8))
