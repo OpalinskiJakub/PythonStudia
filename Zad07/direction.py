@@ -1,16 +1,22 @@
-import random
+
 from itertools import islice
 
+import random
 directions = ["N", "E", "S", "W"]
 
-def random_direction_iterator():
-    while True:
-        yield random.choice(directions)
-        
+class DirectionsIterator:
+    def __init__(self):
+        self.directions = ["N", "E", "S", "W"]
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        return random.choice(self.directions)
 
 
 
-iterator = random_direction_iterator()
-generated_values = islice(iterator, 10) 
-for value in generated_values:
+iterator = iter(DirectionsIterator())
+generated = islice(iterator, 10) 
+for value in generated:
     assert value in directions, f"Generated value '{value}' not in directions list"

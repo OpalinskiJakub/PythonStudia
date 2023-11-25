@@ -1,10 +1,20 @@
-from itertools import cycle,islice
+from itertools import islice
 
 
-def weekday_number_generator():
-    return cycle(range(7))
+class WeekIterator:
+    def __init__(self):
+        self.day = 0
 
-iterator=weekday_number_generator()
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        
+        value = self.day % 7
+        self.day += 1
+        return value
+
+iterator=iter(WeekIterator())
 
 expected=[0,1,2,3,4,5,6,0,1,2,3,4,5,6]
 generated=list(islice(iterator, 14))

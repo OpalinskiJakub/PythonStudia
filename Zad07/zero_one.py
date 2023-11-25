@@ -1,10 +1,18 @@
-from itertools import cycle,islice
+from itertools import islice
 
-def zero_one_iterator():
-    return cycle([0, 1])
+class ZeroOneIterator:
+    def __init__(self):
+        self.index = 0
 
+    def __iter__(self):
+        return self
 
-iterator=zero_one_iterator()
+    def __next__(self):
+        value = self.index % 2
+        self.index += 1
+        return value
+    
+iterator=iter(ZeroOneIterator())
 
 expected=[0, 1, 0, 1]
 generated=list(islice(iterator,4))
