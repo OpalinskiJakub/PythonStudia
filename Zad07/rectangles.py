@@ -77,6 +77,7 @@ class TestRectangle(unittest.TestCase):
         self.rect2 = Rectangle(2, 2, 4, 4)
         self.rect3 = Rectangle(5, 5, 7, 7)
         self.rect4 = Rectangle(2, 2, 6, 6)
+        self.rect5 = Rectangle(1, 1, 3, 3)
 
     def test_init_valid_rectangle(self):
         self.assertIsInstance(self.rect1, Rectangle)
@@ -91,7 +92,10 @@ class TestRectangle(unittest.TestCase):
     def test_representation(self):
         self.assertEqual(repr(self.rect1), "Rectangle(1, 1, 3, 3)")
 
-  
+    def test_equality(self):
+        self.assertNotEqual(self.rect1, self.rect2)
+        self.assertNotEqual(self.rect1, self.rect3)
+        self.assertEqual(self.rect1, self.rect5)
 
     def test_center(self):
         self.assertEqual(self.rect1.center(), Point(2.0, 2.0))
