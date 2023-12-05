@@ -22,3 +22,6 @@ def test_properties():
     assert rectangle.bottomright == Point(5, 2)
 
 
+def test_center():
+    rectangle = Rectangle(1, 2, 5, 7)
+    assert rectangle.center == Point(3, 4.5)
