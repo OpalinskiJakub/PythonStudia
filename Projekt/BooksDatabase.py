@@ -80,8 +80,15 @@ class BooksDatabase:
                 matching_books.append(book)
         return matching_books
 
+    def find_book_by_title(self, title):
+        db = self.load_database()
+        matching_books = []
+        for book in db:
+            if title.lower() in book.title.lower():
+                matching_books.append(book)
+        return matching_books
+
 
     def list_books(self):
         db = self.load_database()
-        for book in db:
-            print(f"ID: {book.book_id}, Title: {book.title}, Author: {book.author_first_name} {book.author_last_name}, Year of Publication: {book.publication_year}")
+        return db

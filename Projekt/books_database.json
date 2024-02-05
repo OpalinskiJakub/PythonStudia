@@ -1,12 +1,5 @@
 [
     {
-        "book_id": 1,
-        "title": "The Great Gatsby",
-        "author_first_name": "F. Scott",
-        "author_last_name": "Fitzgerald",
-        "publication_year": 1925
-    },
-    {
         "book_id": 2,
         "title": "To Kill a Mockingbird",
         "author_first_name": "Harper",
@@ -14,35 +7,7 @@
         "publication_year": 1960
     },
     {
-        "book_id": 3,
-        "title": "The Great Gatsby",
-        "author_first_name": "F. Scott",
-        "author_last_name": "Fitzgerald",
-        "publication_year": 1925
-    },
-    {
-        "book_id": 4,
-        "title": "To Kill a Mockingbird",
-        "author_first_name": "Harper",
-        "author_last_name": "Lee",
-        "publication_year": 1960
-    },
-    {
         "book_id": 5,
-        "title": "The Great Gatsby",
-        "author_first_name": "F. Scott",
-        "author_last_name": "Fitzgerald",
-        "publication_year": 1925
-    },
-    {
-        "book_id": 6,
-        "title": "To Kill a Mockingbird",
-        "author_first_name": "Harper",
-        "author_last_name": "Lee",
-        "publication_year": 1960
-    },
-    {
-        "book_id": 7,
         "title": "The Great Gatsby",
         "author_first_name": "F. Scott",
         "author_last_name": "Fitzgerald",
@@ -82,5 +47,19 @@
         "author_first_name": "Harper",
         "author_last_name": "Lee",
         "publication_year": 1960
+    },
+    {
+        "book_id": 13,
+        "title": "tuta",
+        "author_first_name": "erwe",
+        "author_last_name": "wefeww",
+        "publication_year": "3214"
+    },
+    {
+        "book_id": 14,
+        "title": "amrek",
+        "author_first_name": "erew",
+        "author_last_name": "13",
+        "publication_year": "23"
     }
 ]
