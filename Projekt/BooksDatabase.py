@@ -76,7 +76,7 @@ class BooksDatabase:
         db = self.load_database()
         matching_books = []
         for book in db:
-            if book.publication_year == year:
+            if int(book.publication_year) == int(year):
                 matching_books.append(book)
         return matching_books
 
